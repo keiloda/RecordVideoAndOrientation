@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="310dp"
+        android:layout_height="310dp"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="425dp"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_ChangeCamera"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Switch Camera" />
+
+        <Button
+            android:id="@+id/button_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Capture/Stop" />
+
+        <com.javacodegeeks.androidvideocaptureexample.OrientationView
+            android:id="@+id/vectorOrientationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.javacodegeeks.androidvideocaptureexample.OrientationView
+                    android:id="@+id/vectorOrientationViewDegrees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </TableRow>
+                </com.javacodegeeks.androidvideocaptureexample.OrientationView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TableRow>
+        </com.javacodegeeks.androidvideocaptureexample.OrientationView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/record_signal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="recording"
+            android:textColor="@color/red"
+            android:textColorHint="@color/red"
+            android:textColorLink="@color/red"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
